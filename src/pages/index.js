@@ -1,15 +1,15 @@
-import React from 'react'
-import { graphql } from 'gatsby'
-import get from 'lodash/get'
+import React from "react";
+import { graphql } from "gatsby";
+import get from "lodash/get";
 
-import Layout from '../components/layout'
-import Hero from '../components/hero'
-import ArticlePreview from '../components/article-preview'
+import Layout from "../components/layout";
+import Hero from "../components/hero";
+import ArticlePreview from "../components/article-preview";
 
 class RootIndex extends React.Component {
   render() {
-    const posts = get(this, 'props.data.allContentfulBlogPost.nodes')
-    const [author] = get(this, 'props.data.allContentfulPerson.nodes')
+    const posts = get(this, "props.data.allContentfulBlogPost.nodes");
+    const [author] = get(this, "props.data.allContentfulPerson.nodes");
 
     return (
       <Layout location={this.props.location}>
@@ -20,11 +20,11 @@ class RootIndex extends React.Component {
         />
         <ArticlePreview posts={posts} />
       </Layout>
-    )
+    );
   }
 }
 
-export default RootIndex
+export default RootIndex;
 
 export const pageQuery = graphql`
   query HomeQuery {
@@ -62,4 +62,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
