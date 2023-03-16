@@ -1,8 +1,7 @@
 import React from "react";
 
-import "../variables.css";
-import "../global.css";
-import Seo from "../seo";
+import "../../styles/global.css";
+import Seo from "./SEO";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 class Template extends React.Component {
