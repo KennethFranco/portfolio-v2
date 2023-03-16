@@ -6,6 +6,7 @@ Changelog Format
 - [Initials of Dev] [#issue number](issue link on GitHub) {issue title}
 -->
 
+- [KF] [#13](https://github.com/KennethFranco/portfolio-v2/issues/13) app(feature): clean up files
 - [KF] [#11](https://github.com/KennethFranco/portfolio-v2/issues/11) home page(feature): add skills frame
 - [KF] [#7](https://github.com/KennethFranco/portfolio-v2/issues/7) home page(feature): add hero
 - [KF] [#6](https://github.com/KennethFranco/portfolio-v2/issues/6) layout(feature): add footer
