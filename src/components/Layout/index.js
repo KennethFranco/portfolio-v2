@@ -13,7 +13,7 @@ class Template extends React.Component {
       <>
         <Seo />
         <Navbar />
-        <main className="min-h-screen">{children}</main>
+        <main>{children}</main>
         <Footer />
       </>
     );
