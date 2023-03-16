@@ -1,10 +1,10 @@
 import React from "react";
 
-import "./variables.css";
-import "./global.css";
-import Seo from "./seo";
-import Navbar from "./Layout/Navbar";
-import Footer from "./footer";
+import "../variables.css";
+import "../global.css";
+import Seo from "../seo";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 class Template extends React.Component {
   render() {
     const { children } = this.props;
