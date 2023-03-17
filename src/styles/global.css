@@ -15,3 +15,27 @@ body {
   max-width: 100%;
   overflow-x: hidden;
 }
+
+.swiper-pagination-bullet-active {
+  background: #7d0719 !important;
+}
+
+.swiper-pagination-bullet:hover {
+  background: #a70022 !important;
+}
+
+.swiper-button-prev {
+  color: #7d0719 !important;
+}
+
+.swiper-button-next {
+  color: #7d0719 !important;
+}
+
+.swiper-button-prev:hover {
+  color: #a70022 !important;
+}
+
+.swiper-button-next:hover {
+  color: #a70022 !important;
+}

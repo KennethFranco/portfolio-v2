@@ -16,9 +16,9 @@ const Skills = () => {
   );
 
   return (
-    <div className="px-16 py-16 xl:px-32 xl:py-32 bg-cream font-abc">
+    <div className="px-8 py-16 xl:px-32 xl:py-32 bg-cream font-abc">
       <p className="text-4xl font-extrabold text-red3">Skills</p>
-      <p className="text-xl mt-5">
+      <p className="text-xl text-justify xl:text-left mt-5">
         Developing applications tailor-fit for the end users' needs has always
         been my focus as a Software Engineer. I mainly focus on the side of web
         development, utilizing{" "}
@@ -55,7 +55,7 @@ const Skills = () => {
                 {skills.map((skill) => {
                   if (skill?.category?.name === skillCategory?.name) {
                     return (
-                      <p className="text-[#3A030B] bg-[#F6C5CC] px-3 py-3 rounded-md">
+                      <p className="text-[#3A030B] bg-[#F6C5CC] px-3 py-3 rounded-md font-xyz">
                         {skill?.name}
                       </p>
                     );
@@ -65,14 +65,6 @@ const Skills = () => {
             </div>
           );
         })}
-        {/* <div className="border-8 border-solid border-gold px-11 py-16">
-          <p className="text-red2 font-bold text-2xl text-center mb-10">
-            Programming Languages
-          </p>
-          <span className="text-[#3A030B] bg-[#F6C5CC] px-3 py-3 rounded-md">
-            JavaScript
-          </span>
-        </div> */}
       </div>
     </div>
   );
