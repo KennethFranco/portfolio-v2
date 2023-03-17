@@ -10,7 +10,7 @@ const Hero = () => {
     <div className="font-abc bg-[#DFC18F] py-12 px-0 xl:px-28 flex-none xl:flex text-center xl:text-left">
       <StaticImage
         // className="w-[300px]"
-        className="w-1/3 xl:w-[60%] text-center xl:text-left"
+        className="w-1/3 xl:w-[60%] max-w-[400px] text-center xl:text-left z-0"
         src="../../../static/images/upa.png"
         quality={100}
       />
@@ -18,7 +18,7 @@ const Hero = () => {
         <p className="text-5xl font-extrabold text-red3 mt-6 xl:mt-0">
           Hi there!
         </p>
-        <p className="text-red2 text-2xl">
+        <p className="text-red2 text-3xl">
           I'm <span className="font-semibold text-red2">Ken.</span>
         </p>
         <p className="font-xyz italic text-cream">/ kɛn /</p>
@@ -28,7 +28,7 @@ const Hero = () => {
             skipAddStyles
             options={{
               strings: [
-                "Full-stack Web Developer",
+                "Full-Stack Web Developer",
                 "MIS Undergraduate",
                 "Tech Nerd",
               ],
@@ -38,7 +38,7 @@ const Hero = () => {
           />
         </div>
 
-        <p className="text-lg px-4 xl:px-0">
+        <p className="text-xl px-4 xl:px-0">
           I'm a Philippines-based graduating Ateneo de Manila University (ADMU)
           student and aspiring Software Engineer, eager to build meaningful
           experiences for people through the use of today's technology.

@@ -16,10 +16,21 @@ const Skills = () => {
   );
 
   return (
-    <div className="px-32 py-32 bg-cream font-abc">
+    <div className="px-16 py-16 xl:px-32 xl:py-32 bg-cream font-abc">
       <p className="text-4xl font-extrabold text-red3">Skills</p>
-      <p className="text-2xl">
-        Here are some of the skills lorem ipsum, lorem ipsum
+      <p className="text-xl mt-5">
+        Developing applications tailor-fit for the end users' needs has always
+        been my focus as a Software Engineer. I mainly focus on the side of web
+        development, utilizing{" "}
+        <span className="font-xyz text-red3">Gatsby</span> and{" "}
+        <span className="font-xyz text-red3">Django</span> as my main
+        frontend/backend frameworks respectively. In addition to this, I have
+        also been exposed to utilizing many external tools involved in database
+        management, deployment, and automations.
+      </p>
+
+      <p className="text-xl mt-5">
+        Overall, I enjoy allowing myself to explore new technologies.
       </p>
 
       <div className="mt-10 grid md:grid-cols-2 lg:grid-cols-3 md:gap-x-8 lg:gap-x-16 gap-y-12">
