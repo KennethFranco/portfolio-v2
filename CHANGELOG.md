@@ -6,6 +6,7 @@ Changelog Format
 - [Initials of Dev] [#issue number](issue link on GitHub) {issue title}
 -->
 
+- [KF] [#22](https://github.com/KennethFranco/portfolio-v2/issues/22) projects(feature): add projects frame
 - [KF] [#20](https://github.com/KennethFranco/portfolio-v2/issues/20) about(feature): add about us hero and drawers
 - [KF] [#17](https://github.com/KennethFranco/portfolio-v2/issues/17) home page(feature): add projects carousel
 - [KF] [#15](https://github.com/KennethFranco/portfolio-v2/issues/15) app(feature): apply 230317 ui changes

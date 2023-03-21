@@ -11,7 +11,11 @@ import "swiper/css/navigation";
 import useContentfulProjects from "../../hooks/useContentfulProjects";
 
 const FeaturedProjects = () => {
-  let featuredProjects = useContentfulProjects();
+  let featuredProjects = useContentfulProjects()
+    .sort((a, b) => a.name.localeCompare(b.name) || a.isFeatured - b.isFeatured)
+    .filter((project) => {
+      return project?.isFeatured;
+    });
 
   return (
     <div>
@@ -62,6 +66,9 @@ const FeaturedProjects = () => {
                 <div className="bg-cream text-cream text-abc py-4 px-4 xl:py-12 xl:px-12 border-8 border-solid border-gold overflow-visible z-100 w-2/3 lg:w-1/2 m-auto text-center">
                   <p className="text-base xl:text-xl font-abc text-red2 font-bold">
                     {featuredProject?.name}
+                  </p>
+                  <p className="font-abc text-black">
+                    {featuredProject?.description?.description}
                   </p>
                   <div className="flex flex-wrap justify-center font-xyz">
                     {skills.map((skill) => {
