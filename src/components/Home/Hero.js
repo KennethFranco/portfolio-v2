@@ -9,8 +9,7 @@ const Hero = () => {
   return (
     <div className="font-abc bg-[#DFC18F] py-12 px-0 xl:px-28 flex-none xl:flex text-center xl:text-left">
       <StaticImage
-        // className="w-[300px]"
-        className="w-1/3 xl:w-[60%] max-w-[400px] text-center xl:text-left z-0"
+        className="w-1/3 xl:w-full"
         src="../../../static/images/upa.png"
         quality={100}
       />

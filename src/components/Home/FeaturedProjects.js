@@ -13,15 +13,6 @@ import useContentfulProjects from "../../hooks/useContentfulProjects";
 const FeaturedProjects = () => {
   let featuredProjects = useContentfulProjects();
 
-  //   useEffect(() => {
-  //     const stylesheet = document.styleSheets[0];
-  //     stylesheet.insertRule(
-  //       ".swiper-pagination-bullet-active { background: #7D0719 !important;}",
-  //       0
-  //     );
-  //   }, []);
-
-  console.log(featuredProjects);
   return (
     <div>
       <div className="px-8 py-16 xl:px-32 xl:py-32 bg-cream font-abc ">
