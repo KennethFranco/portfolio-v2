@@ -3,9 +3,11 @@ import React from "react";
 const Button = ({ children, disabled, variant, className, onClick }) => {
   return (
     <button
-      className={`text-abc rounded-md hover:cursor-pointer duration-200 ${className} ${
+      className={`font-abc text-lg px-5 py-2 rounded-md hover:cursor-pointer duration-200 ease-in ${className} ${
         variant === "primary"
           ? "bg-red3 text-white hover:bg-red2 hover:text-white"
+          : variant === "secondary"
+          ? "bg-transparent text-red3 border-2 border-solid border-red3 hover:bg-red3 hover:text-white"
           : ""
       } ${
         disabled

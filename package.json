@@ -24,6 +24,7 @@
     "gbimage-bridge": "^0.2.2",
     "gh-pages": "^3.1.0",
     "lodash": "^4.17.21",
+    "moment": "^2.29.4",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-helmet": "^6.1.0",
