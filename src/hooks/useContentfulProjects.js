@@ -20,6 +20,10 @@ const ALL_CONTENTFUL_PROJECTS = graphql`
             src
           }
         }
+        description {
+          description
+        }
+        isFeatured
       }
     }
   }
