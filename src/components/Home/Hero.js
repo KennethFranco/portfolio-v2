@@ -8,7 +8,7 @@ import Button from "../Elements/Button";
 
 const Hero = () => {
   return (
-    <div className="font-abc bg-[#DFC18F] py-12 px-0 xl:px-28 flex-none xl:flex text-center xl:text-left">
+    <div className="font-abc bg-[#DFC18F] py-12 px-0 xl:px-28 flex-none xl:flex text-center xl:text-left animate__animated animate__fadeInLeft">
       <StaticImage
         className="w-1/3 xl:w-full max-w-[300px]"
         src="../../../static/images/upa.png"
@@ -55,6 +55,7 @@ const Hero = () => {
           <a
             target="_blank"
             href="https://calendly.com/kennethlaurenzfranco/30min"
+            rel="noreferrer"
           >
             <Button className="px-3 py-3" variant="secondary">
               Schedule a meeting

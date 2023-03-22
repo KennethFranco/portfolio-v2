@@ -93,6 +93,7 @@ const ExperienceDrawer = ({
   return (
     <div
       className={`border-solid border-4 rounded-md border-gold px-8 py-8 ${className}`}
+      data-aos="fade-down"
     >
       <div
         className="flex-none lg:flex justify-between group text-center lg:text-left  hover:cursor-pointer"

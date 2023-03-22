@@ -1,12 +1,11 @@
 import React from "react";
-import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 
 import Button from "../Elements/Button";
 
 const Hero = () => {
   return (
-    <div className="flex-none lg:flex gap-12 bg-gold lg:px-20 px-10 py-20 font-abc text-center lg:text-left">
+    <div className="flex-none lg:flex gap-12 bg-gold lg:px-20 px-10 py-20 font-abc text-center lg:text-left animate__animated animate__fadeInLeft">
       <div>
         <StaticImage
           className="w-2/3 lg:w-full"
@@ -41,6 +40,7 @@ const Hero = () => {
           <a
             href="https://drive.google.com/file/d/1fAXP_CmSLW3Pr5BLncQ-Ao6pOdqCnIUb/view?usp=sharing"
             target="_blank"
+            rel="noreferrer"
           >
             <Button className="mr-5" variant="primary">
               Download CV

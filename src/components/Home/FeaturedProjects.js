@@ -19,7 +19,7 @@ const FeaturedProjects = () => {
     });
 
   return (
-    <div className="bg-cream pb-20">
+    <div className="bg-cream pb-20" data-aos="fade-down">
       <div className="px-8 py-16 xl:px-32 xl:py-32 bg-cream font-abc ">
         <p className="text-red3 text-4xl font-extrabold">Featured Projects</p>
         <p className="mt-5 text-xl text-justify xl:text-left">
