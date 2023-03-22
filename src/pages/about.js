@@ -23,7 +23,7 @@ const About = () => {
   );
 
   return (
-    <Layout>
+    <Layout page="about">
       <Hero />
       <div className="bg-cream px-5 md:px-14 py-14 font-abc">
         {experienceTypes.map((experienceType) => {

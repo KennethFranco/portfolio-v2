@@ -39,12 +39,12 @@ const Contact = () => {
   };
 
   return (
-    <Layout>
+    <Layout page="contact">
       <div className="px-10 lg:px-20 py-20 bg-cream font-abc">
-        <p className="text-center text-red3 font-extrabold text-3xl lg:text-4xl">
+        <p className="text-center text-red3 font-extrabold text-3xl lg:text-4xl animate__animated animate__fadeInLeft">
           Contact Me
         </p>
-        <div className="flex justify-center text-4xl mt-5 text-red3">
+        <div className="flex justify-center text-4xl mt-5 text-red3 animate__animated animate__fadeInLeft">
           <a
             className="hover:text-red2 hover:scale-110 duration-150 ease-in"
             href="https://www.linkedin.com/in/kenneth-laurenz-franco-162b94200/"
@@ -66,15 +66,18 @@ const Contact = () => {
             <FontAwesomeIcon icon={faEnvelope} />
           </a>
         </div>
-        <p className="mt-5 text-xl text-justify">
+        <p className="mt-5 text-xl text-justify animate__animated animate__fadeInLeft">
           Have something to show me or interested in getting to know me better?
           Feel free to send a message through this form!
         </p>
 
-        <div className="p-5 border-solid border-4 border-gold rounded-md mt-5 text-xl">
+        <div
+          className="p-5 border-solid border-4 border-gold rounded-md mt-5 text-xl animate__animated animate__fadeInDown"
+          data-aos="fade-down"
+        >
           <form onSubmit={handleSubmit}>
             <div className="flex flex-col">
-              <label className="" for="name">
+              <label className="" htmlFor="name" for="name">
                 Name:
               </label>
               <input
@@ -88,12 +91,12 @@ const Contact = () => {
             </div>
 
             <div className="flex flex-col mt-5">
-              <label className="" for="name">
+              <label className="" htmlFor="email" for="email">
                 Email:
               </label>
               <input
-                name="name"
-                id="name"
+                name="email"
+                id="email"
                 className="bg-cream border-solid border-2 border-red3 rounded-md place text-black p-4"
                 type="email"
                 onChange={(event) => setEmail(event.target.value)}
@@ -102,12 +105,12 @@ const Contact = () => {
             </div>
 
             <div className="flex flex-col mt-5">
-              <label className="" for="name">
+              <label className="" htmlFor="message" for="message">
                 Message:
               </label>
               <textarea
-                name="name"
-                id="name"
+                name="message"
+                id="message"
                 className="bg-cream border-solid border-2 border-red3 rounded-md place text-black p-4"
                 type="text"
                 onChange={(event) => setMessage(event.target.value)}

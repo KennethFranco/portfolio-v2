@@ -8,6 +8,7 @@ Changelog Format
 
 - [KF] [#31](https://github.com/KennethFranco/portfolio-v2/issues/31) app(feature): add yarn lock
 - [KF] [#28](https://github.com/KennethFranco/portfolio-v2/issues/28) app(feature): add node modules to gitignore
+- [KF] [#26](https://github.com/KennethFranco/portfolio-v2/issues/26) app(features): add animations
 - [KF] [#24](https://github.com/KennethFranco/portfolio-v2/issues/24) contact(feature): add contact form
 - [KF] [#22](https://github.com/KennethFranco/portfolio-v2/issues/22) projects(feature): add projects frame
 - [KF] [#20](https://github.com/KennethFranco/portfolio-v2/issues/20) about(feature): add about us hero and drawers

@@ -16,7 +16,10 @@ const Skills = () => {
   );
 
   return (
-    <div className="px-8 py-16 xl:px-32 xl:py-20 bg-cream font-abc">
+    <div
+      className="px-8 py-16 xl:px-32 xl:py-20 bg-cream font-abc"
+      data-aos="fade-down"
+    >
       <p className="text-4xl font-extrabold text-red3">Skills</p>
       <p className="text-xl text-justify xl:text-left mt-5">
         Developing applications tailor-fit for the end users' needs has always
@@ -36,7 +39,10 @@ const Skills = () => {
       <div className="mt-10 grid md:grid-cols-2 lg:grid-cols-3 md:gap-x-8 lg:gap-x-16 gap-y-12">
         {skillCategories.map((skillCategory) => {
           return (
-            <div className="border-8 border-solid border-gold px-11 py-16 relative rounded-md">
+            <div
+              className="border-8 border-solid border-gold px-11 py-16 relative rounded-md"
+              data-aos="fade-down"
+            >
               <FontAwesomeIcon
                 className="absolute top-[-25px]  text-red3 text-5xl bg-cream"
                 icon={
@@ -52,15 +58,19 @@ const Skills = () => {
                 {skillCategory?.name}
               </p>
               <div className="flex flex-wrap gap-4 justify-center">
-                {skills.map((skill) => {
-                  if (skill?.category?.name === skillCategory?.name) {
+                {skills
+                  ?.filter((skill) => {
+                    return skill?.category?.name === skillCategory?.name;
+                  })
+                  .map((skill) => {
                     return (
-                      <p className="text-[#3A030B] bg-[#F6C5CC] px-3 py-3 rounded-md font-xyz">
-                        {skill?.name}
-                      </p>
+                      <div>
+                        <p className="text-[#3A030B] bg-[#F6C5CC] px-3 py-3 rounded-md font-xyz">
+                          {skill?.name}
+                        </p>
+                      </div>
                     );
-                  }
-                })}
+                  })}
               </div>
             </div>
           );

@@ -13,9 +13,9 @@ const Projects = () => {
   );
 
   return (
-    <Layout>
+    <Layout page="projects">
       <div className="bg-cream font-abc px-4 sm:px-10 lg:px-20 py-20">
-        <p className="text-center text-red3 font-extrabold text-3xl lg:text-4xl">
+        <p className="text-center text-red3 font-extrabold text-3xl lg:text-4xl animate__animated animate__fadeInLeft">
           Projects
         </p>
 
@@ -25,7 +25,10 @@ const Projects = () => {
               a.name.localeCompare(b.name)
             );
             return (
-              <div className="border-solid border-4 border-gold rounded-md">
+              <div
+                className="border-solid border-4 border-gold rounded-md"
+                data-aos="fade-down"
+              >
                 <GatsbyImage
                   className="m-auto border-solid border-4 border-gold max-h-[500px]"
                   image={project?.hero?.gatsbyImage}

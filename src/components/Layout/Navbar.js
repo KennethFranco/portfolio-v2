@@ -27,7 +27,7 @@ const Navbar = () => {
           to="/"
         >
           <div className="flex">
-            <img className="w-[20px]" src={upa} />
+            <img className="w-[20px]" src={upa} alt="upa" />
             <p className="ml-4">ken</p>
           </div>
         </Link>
