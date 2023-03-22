@@ -33,6 +33,9 @@ class DevLoader extends _loader.BaseLoader {
   constructor(asyncRequires, matchPaths) {
     const loadComponent = (chunkName, exportType = `components`) => {
       if (!this.asyncRequires[exportType][chunkName]) {
+        if (exportType === `head`) {
+          return null;
+        }
         throw new Error(`We couldn't find the correct component chunk with the name "${chunkName}"`);
       }
       return this.asyncRequires[exportType][chunkName]()

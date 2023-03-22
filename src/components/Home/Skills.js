@@ -2,6 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faToolbox } from "@fortawesome/free-solid-svg-icons";
 import { faReact, faSquareJs } from "@fortawesome/free-brands-svg-icons";
+import "animate.css";
 
 import useContentfulSkillCategories from "./hooks/useContentfulSkillCategories";
 import useContentfulSkills from "./hooks/useContentfulSkills";
@@ -16,8 +17,12 @@ const Skills = () => {
   );
 
   return (
-    <div className="px-8 py-16 xl:px-32 xl:py-32 bg-cream font-abc">
+    <div
+      className="px-8 py-16 xl:px-32 xl:py-20 bg-cream font-abc"
+      data-aos="fade-up"
+    >
       <p className="text-4xl font-extrabold text-red3">Skills</p>
+
       <p className="text-xl text-justify xl:text-left mt-5">
         Developing applications tailor-fit for the end users' needs has always
         been my focus as a Software Engineer. I mainly focus on the side of web
@@ -36,7 +41,10 @@ const Skills = () => {
       <div className="mt-10 grid md:grid-cols-2 lg:grid-cols-3 md:gap-x-8 lg:gap-x-16 gap-y-12">
         {skillCategories.map((skillCategory) => {
           return (
-            <div className="border-8 border-solid border-gold px-11 py-16 relative">
+            <div
+              className="border-8 border-solid border-gold px-11 py-16 relative rounded-md"
+              data-aos="fade-up"
+            >
               <FontAwesomeIcon
                 className="absolute top-[-25px]  text-red3 text-5xl bg-cream"
                 icon={

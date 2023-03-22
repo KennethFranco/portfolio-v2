@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+import React from "react";
+import { Link } from "gatsby";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { GatsbyImage } from "gatsby-plugin-image";
@@ -18,18 +19,21 @@ const FeaturedProjects = () => {
     });
 
   return (
-    <div>
+    <div className="bg-cream pb-20" data-aos="fade-up">
       <div className="px-8 py-16 xl:px-32 xl:py-32 bg-cream font-abc ">
         <p className="text-red3 text-4xl font-extrabold">Featured Projects</p>
         <p className="mt-5 text-xl text-justify xl:text-left">
           As I reflect on my past work experiences and accomplishments, I am
           proud to say that there are several projects that stand out as
-          highlights. These projects not only challenged me to think creatively
-          and strategically but also allowed me to develop new skills and push
-          my boundaries. You can see some of these below.
+          highlights. These three projects not only challenged me to think
+          creatively and strategically but also allowed me to develop new skills
+          and push my boundaries. You can see these below.
         </p>
         <p className="mt-5 text-xl text-justify xl:text-left">
-          If you want to view all of my projects thus far, you can do so here.
+          If you want to view all of my projects thus far, you can do so{" "}
+          <span className="text-red3 hover:text-red2 font-bold ease-in duration-150">
+            <Link to="/projects">here.</Link>
+          </span>
         </p>
       </div>
 
@@ -63,7 +67,7 @@ const FeaturedProjects = () => {
                   className="m-auto mb-5"
                   image={featuredProject?.hero?.gatsbyImage}
                 />
-                <div className="bg-cream text-cream text-abc py-4 px-4 xl:py-12 xl:px-12 border-8 border-solid border-gold overflow-visible z-100 w-2/3 lg:w-1/2 m-auto text-center">
+                <div className="bg-cream text-cream text-abc py-4 px-4 xl:py-12 xl:px-12 border-8 border-solid border-gold overflow-visible z-100 w-2/3 lg:w-1/2 m-auto text-center rounded-md">
                   <p className="text-base xl:text-xl font-abc text-red2 font-bold">
                     {featuredProject?.name}
                   </p>

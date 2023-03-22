@@ -5,7 +5,10 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: "Kenneth Franco",
-    description: "Official Contentful Gatsby Starter",
+    description: "Kenneth Laurenz Franco Portfolio Website",
+  },
+  flags: {
+    DEV_SSR: true,
   },
   plugins: [
     "gatsby-transformer-sharp",

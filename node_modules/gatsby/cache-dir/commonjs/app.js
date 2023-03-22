@@ -55,7 +55,7 @@ const reactFirstRenderOrHydrate = (Component, el) => {
 // "TypeError: __webpack_require__.e is not a function"
 // error.
 function notCalledFunction() {
-  return (specifier => new Promise(r => r(specifier)).then(s => _interopRequireWildcard(require(s))))(`./dummy`);
+  return Promise.resolve().then(() => _interopRequireWildcard(require(`./dummy`)));
 }
 
 // Let the site/plugins run code very early.

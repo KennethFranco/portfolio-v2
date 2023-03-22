@@ -5,7 +5,10 @@ import Button from "../Elements/Button";
 
 const Hero = () => {
   return (
-    <div className="flex-none lg:flex gap-12 bg-gold lg:px-20 px-10 py-20 font-abc text-center lg:text-left">
+    <div
+      className="flex-none lg:flex gap-12 bg-gold lg:px-20 px-10 py-20 font-abc text-center lg:text-left"
+      data-aos="fade-down"
+    >
       <div>
         <StaticImage
           className="w-2/3 lg:w-full"
@@ -37,10 +40,14 @@ const Hero = () => {
         </p>
 
         <div className="flex mt-10 justify-center lg:justify-start">
-          <Button className="mr-5" variant="primary">
-            Download Resume
-          </Button>
-          <Button variant="secondary">Contact Me</Button>
+          <a
+            href="https://drive.google.com/file/d/1fAXP_CmSLW3Pr5BLncQ-Ao6pOdqCnIUb/view?usp=sharing"
+            target="_blank"
+          >
+            <Button className="mr-5" variant="primary">
+              Download CV
+            </Button>
+          </a>
         </div>
       </div>
     </div>

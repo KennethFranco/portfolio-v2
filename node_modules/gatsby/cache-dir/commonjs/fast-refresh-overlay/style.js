@@ -55,7 +55,7 @@ const Style = () => /*#__PURE__*/React.createElement("style", {
 
         [data-gatsby-overlay="backdrop"] {
           background: var(--backdrop);
-          position: absolute;
+          position: fixed;
           top: 0;
           left: 0;
           right: 0;
