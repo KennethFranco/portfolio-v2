@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGear,
   faCalendarAlt,
-  faCaretDown,
   faCaretUp,
   faBriefcase,
   faSchool,
@@ -113,8 +112,10 @@ const ExperienceDrawer = ({
         </div>
 
         <FontAwesomeIcon
-          className="flex-end text-red3 group-hover:text-red2 group-hover:scale-110 duration-150 ease-in text-5xl lg:text-7xl"
-          icon={checkActiveType() ? faCaretUp : faCaretDown}
+          className={`flex-end text-red3 group-hover:text-red2 duration-150 ease-in text-5xl lg:text-7xl ${
+            checkActiveType() ? "" : "fa-rotate-180"
+          }`}
+          icon={faCaretUp}
         />
       </div>
 

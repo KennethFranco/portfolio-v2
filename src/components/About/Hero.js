@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 
 import Button from "../Elements/Button";
@@ -37,10 +38,14 @@ const Hero = () => {
         </p>
 
         <div className="flex mt-10 justify-center lg:justify-start">
-          <Button className="mr-5" variant="primary">
-            Download Resume
-          </Button>
-          <Button variant="secondary">Contact Me</Button>
+          <a
+            href="https://drive.google.com/file/d/1fAXP_CmSLW3Pr5BLncQ-Ao6pOdqCnIUb/view?usp=sharing"
+            target="_blank"
+          >
+            <Button className="mr-5" variant="primary">
+              Download CV
+            </Button>
+          </a>
         </div>
       </div>
     </div>

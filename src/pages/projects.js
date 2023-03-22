@@ -15,7 +15,7 @@ const Projects = () => {
   return (
     <Layout>
       <div className="bg-cream font-abc px-4 sm:px-10 lg:px-20 py-20">
-        <p className="text-center text-red3 font-extrabold text-4xl">
+        <p className="text-center text-red3 font-extrabold text-3xl lg:text-4xl">
           Projects
         </p>
 

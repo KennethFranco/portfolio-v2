@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 
 import Typewriter from "typewriter-effect";
@@ -38,18 +39,27 @@ const Hero = () => {
         </div>
 
         <p className="text-xl px-4 xl:px-0">
-          I'm a Philippines-based graduating Ateneo de Manila University (ADMU)
-          student and aspiring Software Engineer, eager to build meaningful
-          experiences for people through the use of today's technology.
+          I'm an undergraduate student majoring in BS Management Information
+          Systems at the Ateneo de Manila University. As an aspiring Software
+          Engineer, I'm eager to build meaningful experiences for people through
+          the use of today's technology.
         </p>
 
         <div className="flex justify-center xl:justify-start mt-7 text-center">
-          <Button className="px-3 py-3 mr-5" variant="primary">
-            About Me
-          </Button>
-          <Button className="px-3 py-3" variant="primary">
-            Contact Me
-          </Button>
+          <Link to="/about">
+            <Button className="px-3 py-3 mr-5" variant="primary">
+              About Me
+            </Button>
+          </Link>
+
+          <a
+            target="_blank"
+            href="https://calendly.com/kennethlaurenzfranco/30min"
+          >
+            <Button className="px-3 py-3" variant="secondary">
+              Schedule a meeting
+            </Button>
+          </a>
         </div>
       </div>
     </div>
