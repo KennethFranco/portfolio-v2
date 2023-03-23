@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 
 import Layout from "../components/Layout/index";
+import Section from "../components/Elements/Section";
 
 import useContentfulProjects from "../hooks/useContentfulProjects";
 
@@ -14,11 +15,7 @@ const Projects = () => {
 
   return (
     <Layout page="projects">
-      <div className="bg-cream font-abc px-4 sm:px-10 lg:px-20 py-20">
-        <p className="text-center text-red3 font-extrabold text-3xl lg:text-4xl animate__animated animate__fadeInLeft">
-          Projects
-        </p>
-
+      <Section name="Projects" headerClassName="text-center">
         <div className="mt-10 grid md:grid-cols-2 gap-y-6 gap-x-6 content-center">
           {projects.map((project) => {
             let skills = project?.skills.sort((a, b) =>
@@ -64,7 +61,7 @@ const Projects = () => {
             );
           })}
         </div>
-      </div>
+      </Section>
     </Layout>
   );
 };

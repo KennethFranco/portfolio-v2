@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 import moment from "moment";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -11,6 +12,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { renderRichText } from "gatsby-source-contentful/rich-text";
 import { BLOCKS } from "@contentful/rich-text-types";
+import { INLINES } from "@contentful/rich-text-types";
 
 const ExperienceDrawer = ({
   className,
@@ -31,6 +33,13 @@ const ExperienceDrawer = ({
       },
       [BLOCKS.OL_LIST]: (node, children) => {
         return <ol className="list-decimal ml-4">{children}</ol>;
+      },
+      [INLINES.HYPERLINK]: (node, children) => {
+        return (
+          <Link to={`${node?.data?.uri}`} className="text-red3 font-extrabold">
+            {children}
+          </Link>
+        );
       },
     },
   };
@@ -96,7 +105,7 @@ const ExperienceDrawer = ({
       data-aos="fade-down"
     >
       <div
-        className="flex-none lg:flex justify-between group text-center lg:text-left  hover:cursor-pointer"
+        className="flex-none lg:flex justify-between group text-center lg:text-left hover:cursor-pointer"
         onClick={() => checkActiveType("openDrawer")}
         role="button"
         tabIndex={0}
@@ -128,7 +137,10 @@ const ExperienceDrawer = ({
               let endDate = moment(experience?.endDate).format("MMM YYYY");
 
               return (
-                <div className="mt-10 font-abc">
+                <div
+                  className="mt-10 font-abc animate__animated animate__fadeInDown"
+                  data-aos="fade-down"
+                >
                   <div className="flex text-3xl font-abc">
                     <FontAwesomeIcon
                       icon={faGear}

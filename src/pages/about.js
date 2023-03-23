@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import moment from "moment";
 
 import Layout from "../components/Layout/index";
-import Hero from "../components/About/Hero";
+import AboutHero from "../components/About/AboutHero";
 import ExperienceDrawer from "../components/About/ExperienceDrawer";
 
 import useContentfulExperiences from "../components/About/hooks/useContentfulExperiences";
@@ -24,7 +24,7 @@ const About = () => {
 
   return (
     <Layout page="about">
-      <Hero />
+      <AboutHero />
       <div className="bg-cream px-5 md:px-14 py-14 font-abc">
         {experienceTypes.map((experienceType) => {
           return (

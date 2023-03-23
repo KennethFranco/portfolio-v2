@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className="font-abc px-8 py-5 bg-cream"
+      className="font-abc px-8 py-5 bg-cream animate__animated animate__fadeInLeft"
       role="navigation"
       aria-label="Main"
     >

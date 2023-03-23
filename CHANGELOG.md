@@ -6,6 +6,7 @@ Changelog Format
 - [Initials of Dev] [#issue number](issue link on GitHub) {issue title}
 -->
 
+- [KF] [#34](https://github.com/KennethFranco/portfolio-v2/issues/34) app(feature): universalize components
 - [KF] [#31](https://github.com/KennethFranco/portfolio-v2/issues/31) app(feature): add yarn lock
 - [KF] [#28](https://github.com/KennethFranco/portfolio-v2/issues/28) app(feature): add node modules to gitignore
 - [KF] [#26](https://github.com/KennethFranco/portfolio-v2/issues/26) app(features): add animations

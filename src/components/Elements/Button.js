@@ -24,7 +24,7 @@ const Button = ({
 
           default:
             classNames =
-              "bg-transparent text-red3 border-2 border-solid border-red3 hover:bg-red3 hover:text-white";
+              "bg-transparent border-2 border-red3 text-red3 border-solid hover:bg-red3 hover:text-white";
         }
     }
     return classNames;
@@ -71,7 +71,7 @@ const Button = ({
   return (
     <div>
       <button
-        className={`font-abc text-lg px-5 py-2 rounded-md duration-200 ease-in ${className} ${generateClassNames()}`}
+        className={`font-abc text-lg px-5 py-2 h-[55px] rounded-md duration-200 ease-in ${className} ${generateClassNames()}`}
         disabled={disabled}
         onClick={onClick}
       >

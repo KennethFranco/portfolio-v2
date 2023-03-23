@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { GatsbyImage } from "gatsby-plugin-image";
@@ -8,6 +7,8 @@ import { Autoplay, Pagination, Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+
+import Section from "../Elements/Section";
 
 import useContentfulProjects from "../../hooks/useContentfulProjects";
 
@@ -19,26 +20,9 @@ const FeaturedProjects = () => {
     });
 
   return (
-    <div className="bg-cream pb-20" data-aos="fade-down">
-      <div className="px-8 py-16 xl:px-32 xl:py-32 bg-cream font-abc ">
-        <p className="text-red3 text-4xl font-extrabold">Featured Projects</p>
-        <p className="mt-5 text-xl text-justify xl:text-left">
-          As I reflect on my past work experiences and accomplishments, I am
-          proud to say that there are several projects that stand out as
-          highlights. These three projects not only challenged me to think
-          creatively and strategically but also allowed me to develop new skills
-          and push my boundaries. You can see these below.
-        </p>
-        <p className="mt-5 text-xl text-justify xl:text-left">
-          If you want to view all of my projects thus far, you can do so{" "}
-          <span className="text-red3 hover:text-red2 font-bold ease-in duration-150">
-            <Link to="/projects">here.</Link>
-          </span>
-        </p>
-      </div>
-
+    <Section name="Home Featured Projects">
       <Swiper
-        className="bg-cream"
+        className="bg-cream mt-5"
         autoplay={{
           delay: 5000,
           disableOnInteraction: false,
@@ -100,7 +84,7 @@ const FeaturedProjects = () => {
           <div className="swiper-pagination"></div>
         </div>
       </Swiper>
-    </div>
+    </Section>
   );
 };
 
