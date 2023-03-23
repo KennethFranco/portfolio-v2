@@ -3,6 +3,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faToolbox } from "@fortawesome/free-solid-svg-icons";
 import { faReact, faSquareJs } from "@fortawesome/free-brands-svg-icons";
 
+import Section from "../Elements/Section";
+
 import useContentfulSkillCategories from "./hooks/useContentfulSkillCategories";
 import useContentfulSkills from "./hooks/useContentfulSkills";
 
@@ -16,26 +18,7 @@ const Skills = () => {
   );
 
   return (
-    <div
-      className="px-8 py-16 xl:px-32 xl:py-20 bg-cream font-abc"
-      data-aos="fade-down"
-    >
-      <p className="text-4xl font-extrabold text-red3">Skills</p>
-      <p className="text-xl text-justify xl:text-left mt-5">
-        Developing applications tailor-fit for the end users' needs has always
-        been my focus as a Software Engineer. I mainly focus on the side of web
-        development, utilizing{" "}
-        <span className="font-xyz text-red3">Gatsby</span> and{" "}
-        <span className="font-xyz text-red3">Django</span> as my main
-        frontend/backend frameworks respectively. In addition to this, I have
-        also been exposed to utilizing many external tools involved in database
-        management, deployment, and automations.
-      </p>
-
-      <p className="text-xl mt-5">
-        Overall, I enjoy allowing myself to explore new technologies.
-      </p>
-
+    <Section name="Home Skills">
       <div className="mt-10 grid md:grid-cols-2 lg:grid-cols-3 md:gap-x-8 lg:gap-x-16 gap-y-12">
         {skillCategories.map((skillCategory) => {
           return (
@@ -76,7 +59,7 @@ const Skills = () => {
           );
         })}
       </div>
-    </div>
+    </Section>
   );
 };
 

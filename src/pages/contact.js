@@ -5,6 +5,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 import Layout from "../components/Layout/index";
+import Section from "../components/Elements/Section";
 import Button from "../components/Elements/Button";
 
 const Contact = () => {
@@ -40,10 +41,7 @@ const Contact = () => {
 
   return (
     <Layout page="contact">
-      <div className="px-10 lg:px-20 py-20 bg-cream font-abc">
-        <p className="text-center text-red3 font-extrabold text-3xl lg:text-4xl animate__animated animate__fadeInLeft">
-          Contact Me
-        </p>
+      <Section name="Contact" headerClassName="text-center">
         <div className="flex justify-center text-4xl mt-5 text-red3 animate__animated animate__fadeInLeft">
           <a
             className="hover:text-red2 hover:scale-110 duration-150 ease-in"
@@ -66,24 +64,24 @@ const Contact = () => {
             <FontAwesomeIcon icon={faEnvelope} />
           </a>
         </div>
-        <p className="mt-5 text-xl text-justify animate__animated animate__fadeInLeft">
-          Have something to show me or interested in getting to know me better?
-          Feel free to send a message through this form!
-        </p>
 
         <div
-          className="p-5 border-solid border-4 border-gold rounded-md mt-5 text-xl animate__animated animate__fadeInDown"
-          data-aos="fade-down"
+          className="p-5 border-solid border-4 border-gold rounded-md mt-5 text-xl animate__animated animate__fadeInLeft"
+          data-aos="fade-left"
         >
           <form onSubmit={handleSubmit}>
             <div className="flex flex-col">
-              <label className="" htmlFor="name" for="name">
+              <label
+                className="text-red2 text-2xl font-bold"
+                htmlFor="name"
+                for="name"
+              >
                 Name:
               </label>
               <input
                 name="name"
                 id="name"
-                className="bg-cream border-solid border-2 border-red3 rounded-md place text-black p-4"
+                className="font-xyz bg-cream border-solid border-2 border-red3 rounded-md place text-black p-4 hover:border-red2 focus:border-red2"
                 type="text"
                 onChange={(event) => setName(event.target.value)}
                 value={name}
@@ -91,13 +89,17 @@ const Contact = () => {
             </div>
 
             <div className="flex flex-col mt-5">
-              <label className="" htmlFor="email" for="email">
+              <label
+                className="text-red2 text-2xl font-bold"
+                htmlFor="email"
+                for="email"
+              >
                 Email:
               </label>
               <input
                 name="email"
                 id="email"
-                className="bg-cream border-solid border-2 border-red3 rounded-md place text-black p-4"
+                className="font-xyz bg-cream border-solid border-2 border-red3 rounded-md place text-black p-4 hover:border-red2 focus:border-red2"
                 type="email"
                 onChange={(event) => setEmail(event.target.value)}
                 value={email}
@@ -105,13 +107,17 @@ const Contact = () => {
             </div>
 
             <div className="flex flex-col mt-5">
-              <label className="" htmlFor="message" for="message">
+              <label
+                className="text-red2 text-2xl font-bold"
+                htmlFor="message"
+                for="message"
+              >
                 Message:
               </label>
               <textarea
                 name="message"
                 id="message"
-                className="bg-cream border-solid border-2 border-red3 rounded-md place text-black p-4"
+                className="font-xyz bg-cream border-solid border-2 border-red3 rounded-md place text-black p-4 hover:border-red2 focus:border-red2"
                 type="text"
                 onChange={(event) => setMessage(event.target.value)}
                 value={message}
@@ -133,7 +139,7 @@ const Contact = () => {
         <p className="mt-10 text-xl text-center">
           Hope to be hear from you soon!
         </p>
-      </div>
+      </Section>
     </Layout>
   );
 };

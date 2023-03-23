@@ -18,8 +18,13 @@ if (typeof window !== "undefined") {
 
 const Template = (children) => {
   const [loadingGif, setLoadingGif] = useState(true);
+  const [startAnimation, setStartAnimation] = useState(false);
 
   useEffect(() => {
+    setTimeout(() => {
+      setStartAnimation(true);
+    }, 1800);
+
     setTimeout(() => {
       setLoadingGif(false);
     }, 2000);
@@ -28,7 +33,11 @@ const Template = (children) => {
   return (
     <div className="min-h-screen bg-cream">
       {loadingGif ? (
-        <div className="py-20">
+        <div
+          className={`py-20 ${
+            startAnimation ? "animate__animated animate__backOutRight" : ""
+          }`}
+        >
           <img
             className="m-auto animate__animated animate__heartBeat"
             alt="upa loading"
